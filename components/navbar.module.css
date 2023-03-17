@@ -1,0 +1,52 @@
+
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: var(--myWhite);
+    /*color: var(--myDarkgreen);*/
+    position:relative;
+    z-index: 1;
+  }
+
+.navHomeSection {
+    flex-basis: calc(2*(100%/3));
+    padding: 2rem;
+    display: flex;
+}
+
+.navHomeSection a{
+    transition: all 0.2s ease;
+}
+
+.navHomeSection a:hover ~ h1{
+    transition: opacity 0.5s ease;
+    opacity: 0.3;
+}
+
+.navSection {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    /*justify-content: flex-end; */ /* Maybe use this once we have social links or somehting*/
+    
+}
+
+.navSection a {
+    padding: 1.5rem;
+}
+
+.navSection a:hover {
+    color:#0070f3;
+}
+
+.blinkingChar {
+    animation: blinker 1.5s step-start infinite;
+    font-weight: 800;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

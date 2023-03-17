@@ -1,0 +1,144 @@
+.grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: transform 0.75s cubic-bezier(.35, .25, .34, .99);
+}
+
+.grid[data-status="before"] {
+    transform: translateX(-100%);
+}
+
+.grid[data-status="active"] {
+    transform: translateX(0%);
+}
+
+.grid[data-status="after"] {
+    transform: translateX(100%);
+}
+
+.grid[data-status="betweenAfter"] {
+    transform: translateX(100%);
+    transition: none;
+}
+
+.grid[data-status="betweenBefore"] {
+    transform: translateX(-100%);
+    transition: none;
+}
+
+.card {
+    height: 100%;
+    padding: 1.5rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    overflow: hidden;
+}
+
+.card p,
+.card h1,
+.card a {
+    transition: color 0.15s ease;
+}
+
+.card:hover a,
+.card:hover h1 {
+    color: #0070f3;
+}
+
+.gridimage,
+.gridtitle {
+    border-right: 1px solid
+}
+
+.gridlinks,
+.gridnav {
+    border-left: 1px solid
+}
+
+.gridtitle,
+.gridnav {
+    border-top: 1px solid
+}
+
+.gridlinks,
+.gridimage {
+    border-bottom: 1px solid
+}
+
+.gridtitle h1 {
+    font-size: 5rem
+}
+
+.gridimage {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.projectImage {
+    height: auto;
+    object-fit: cover;
+    transition: transform .8s ease-in-out;
+}
+
+.projectImage:hover {
+    transform: scale(1.1);
+}
+
+.gridnav {
+    display: flex;
+    width: 100%;
+    padding: 0rem;
+}
+
+.navButton {
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+    /* Allow each flex item to grow */
+    flex-shrink: 1;
+    /* Allow each flex item to shrink */
+    background: none;
+    border: none;
+    font-size: 8em;
+    transition: color 0.15s ease-in-out, width 0.5s ease;
+}
+
+.navButtonLeft {
+    border-right: 1px solid var(--myWhite);
+}
+
+.navButtonRight {
+    border-left: 1px solid var(--myWhite);
+}
+
+.navButton:hover {
+    color: #0070f3;
+    cursor: pointer;
+}
+
+.navButtonLeft:hover,
+.navButtonRight:hover {
+    width: 60%
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.logo {
+    height: 1em;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+}

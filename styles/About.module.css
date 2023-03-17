@@ -1,0 +1,10 @@
+.aboutBox {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+.mail {
+    color: var(--myBlue);
+}

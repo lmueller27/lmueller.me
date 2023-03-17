@@ -1,0 +1,16 @@
+.cvcontainer {
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+    padding: 2rem 10rem
+}
+
+.cvtable {
+    border-spacing: 75px 50px;
+}
+
+.descriptorcell {
+    font-size: 2rem;
+    text-align:left;
+    vertical-align: top;
+}
