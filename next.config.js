@@ -12,3 +12,9 @@ const typescript= {
 }
 
 module.exports = nextConfig, typescript
+
+module.exports = {
+  images: {
+      unoptimized: true
+  }
+}

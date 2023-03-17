@@ -162,6 +162,7 @@ export default function Projects() {
                     <p>
                         Get Points-of-Interest recommendations in your IDE.
                     </p>
+                    <br></br>
                     <p>
                         Work in Progress
                     </p>
