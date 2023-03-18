@@ -79,7 +79,7 @@ export default function Projects() {
                     <br></br>
                     <p>
                         <Link href="https://git.rwth-aachen.de/leon.mueller/noisy-surfaces" passHref legacyBehavior>
-                            <a target="_blank" rel="noopener noreferrer">
+                            <a target="_blank" rel="noopener noreferrer" tabIndex={-1}>
                                 Visit Repo
                             </a>
                         </Link>
@@ -94,8 +94,8 @@ export default function Projects() {
                     </h2>
                 </div>
                 <div className={`${styles.gridnav} ${styles.card}`}>
-                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide}>{'<'}</button>
-                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide}>{'>'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide} tabIndex={-1}>{'<'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide} tabIndex={-1}>{'>'}</button>
                 </div>
             </article>
         );
@@ -124,7 +124,7 @@ export default function Projects() {
                     <br></br>
                     <p>
                         <Link href="https://git.rwth-aachen.de/i5/factdag/factfuse" passHref legacyBehavior>
-                            <a target="_blank" rel="noopener noreferrer">
+                            <a target="_blank" rel="noopener noreferrer" tabIndex={-1}>
                                 Visit Repo
                             </a>
                         </Link>
@@ -139,8 +139,8 @@ export default function Projects() {
                     </h2>
                 </div>
                 <div className={`${styles.gridnav} ${styles.card}`}>
-                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide}>{'<'}</button>
-                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide}>{'>'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide} tabIndex={-1}>{'<'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide} tabIndex={-1}>{'>'}</button>
                 </div>
             </article>
         );
@@ -176,8 +176,8 @@ export default function Projects() {
                     </h2>
                 </div>
                 <div className={`${styles.gridnav} ${styles.card}`}>
-                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide}>{'<'}</button>
-                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide}>{'>'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={nextSlide} tabIndex={-1}>{'<'}</button>
+                    <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={prevSlide} tabIndex={-1}>{'>'}</button>
                 </div>
             </article>
         );

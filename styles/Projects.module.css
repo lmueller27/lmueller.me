@@ -70,7 +70,7 @@
 }
 
 .gridtitle h1 {
-    font-size: 5rem
+    font-size: 9vh
 }
 
 .gridimage {
@@ -104,7 +104,7 @@
     /* Allow each flex item to shrink */
     background: none;
     border: none;
-    font-size: 8em;
+    font-size: 8rem;
     transition: color 0.15s ease-in-out, width 0.5s ease;
 }
 
@@ -130,10 +130,6 @@
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.5;
-}
-
-.logo {
-    height: 1em;
 }
 
 @media (max-width: 600px) {

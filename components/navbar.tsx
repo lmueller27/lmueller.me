@@ -16,7 +16,9 @@ export default function Navbar() {
                     <p className={styles.blinkingChar}>_</p>
                 </h1>
             </div>
+            
             <div id="nav-rest" className={styles.navSection}>
+
                 <div id="nav-about-section">
                     <h1 className={utilStyles.heading2Xl}>
                         <Link href="/about">about</Link>
@@ -33,6 +35,7 @@ export default function Navbar() {
                     </h1>
                 </div>
             </div>
+
         </nav>
     );
 }

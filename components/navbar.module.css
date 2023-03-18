@@ -29,7 +29,6 @@
     display: flex;
     justify-content: space-between;
     /*justify-content: flex-end; */ /* Maybe use this once we have social links or somehting*/
-    
 }
 
 .navSection a {
