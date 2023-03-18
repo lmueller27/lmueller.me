@@ -11,10 +11,11 @@ const typescript= {
   ignoreBuildErrors: false,
 }
 
-module.exports = nextConfig, typescript
-
 module.exports = {
+  nextConfig,
+  typescript,
   images: {
       unoptimized: true
-  }
+  },
+  trailingSlash: true
 }
