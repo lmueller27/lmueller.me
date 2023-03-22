@@ -13,7 +13,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <article className={styles.welcome}>
-        <h1 className={utilStyles.heading4Xl}>
+        <h1 className={styles.welcomeTitle}>
           Welcome!
         </h1>
       </article>

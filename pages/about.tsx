@@ -12,10 +12,8 @@ export default function About() {
     return (
         <Layout>
             <Head><title>{siteTitle + ' | about'}</title></Head>
-            <div className={styles.aboutBox}>
-                <div>
-                    <br></br>
-                    <br></br>
+            <div className={styles.aboutContainer}>
+                <div className={styles.aboutBox}>
                     <p>Hey there! I&apos;m Leon and I&apos;m a Computer Science masters graduate.</p>
                     <p>I am interested in information systems, system engineering, </p>
                     <p>data science and human-computer-interaction.</p>

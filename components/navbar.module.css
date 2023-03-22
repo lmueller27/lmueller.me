@@ -1,12 +1,11 @@
-
 .nav {
     display: flex;
     width: 100%;
     background-color: var(--myWhite);
     /*color: var(--myDarkgreen);*/
-    position:relative;
+    position: relative;
     z-index: 1;
-  }
+}
 
 .navHomeSection {
     flex-basis: calc(2*(100%/3));
@@ -14,11 +13,11 @@
     display: flex;
 }
 
-.navHomeSection a{
+.navHomeSection a {
     transition: all 0.2s ease;
 }
 
-.navHomeSection a:hover ~ h1{
+.navHomeSection a:hover~h1 {
     transition: opacity 0.5s ease;
     opacity: 0.3;
 }
@@ -27,8 +26,9 @@
     flex-grow: 1;
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
-    /*justify-content: flex-end; */ /* Maybe use this once we have social links or somehting*/
+    justify-content: flex-end;
+    /*justify-content: flex-end; */
+    /* Maybe use this once we have social links or somehting*/
 }
 
 .navSection a {
@@ -36,7 +36,27 @@
 }
 
 .navSection a:hover {
-    color:#0070f3;
+    color: #0070f3;
+}
+
+.navMenu {
+    flex: 1;
+    display: none;
+    padding: 2rem;
+    justify-content: flex-end;
+}
+
+.menuButton {
+    float: right;
+    padding-right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.navMenuSection {
+    padding-left: 2rem;
+    margin-top: 0rem;
 }
 
 .blinkingChar {
@@ -46,6 +66,26 @@
 
 @keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .navSection {
+        display: none;
+    }
+    
+    .blinkingChar {
+        display: none;
+    }
+
+    .navPath {
+        display: none;
+    }
+
+    .navMenu {
+        display: flex;
     }
 }

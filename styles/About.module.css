@@ -1,8 +1,10 @@
-.aboutBox {
+.aboutContainer {
     padding: 2rem;
     display: flex;
     justify-content: space-evenly;
     font-size: large;
+    height: 100%;
+    overflow: scroll;
 }
 
 .mail {

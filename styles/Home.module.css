@@ -5,3 +5,27 @@
     z-index: 0;
     user-select: none;
 }
+
+.welcomeTitle {
+    font-size: 18rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .welcomeTitle {
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .welcomeTitle {
+        font-size: 13rem;
+    }
+
+    .welcome {
+        margin-top: -3.6rem;
+    }
+  }
