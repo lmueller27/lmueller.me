@@ -20,11 +20,20 @@
     justify-content: center;
 }
 
+.cvlist {
+    height: 100%;
+    padding-bottom: 2rem;
+    display:none;
+}
+
 @media only screen and (max-width: 768px) {
     .cvcontainer {
         padding: 2rem;
     }
     .cvtable {
         display: none;
+    }
+    .cvlist {
+        display: block;
     }
 }

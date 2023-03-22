@@ -27,8 +27,6 @@
     padding: 2rem;
     display: flex;
     justify-content: flex-end;
-    /*justify-content: flex-end; */
-    /* Maybe use this once we have social links or somehting*/
 }
 
 .navSection a {
@@ -57,7 +55,9 @@
 .navMenuSection {
     padding-left: 2rem;
     margin-top: 0rem;
+    display: none;
 }
+
 
 .blinkingChar {
     animation: blinker 1.5s step-start infinite;
@@ -87,5 +87,9 @@
 
     .navMenu {
         display: flex;
+    }
+    
+    .navMenuSection {
+        display: block;
     }
 }
