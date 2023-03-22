@@ -54,8 +54,18 @@
 
 .navMenuSection {
     padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     margin-top: 0rem;
     display: none;
+    position: absolute;
+    background-color: var(--myWhite);
+    width: 100%;
+    z-index: 2;
+}
+
+.navMenuSection a{
+    display: block;
 }
 
 
@@ -70,14 +80,10 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     /* For mobile phones: */
     .navSection {
-        display: none;
-    }
-    
-    .blinkingChar {
         display: none;
     }
 

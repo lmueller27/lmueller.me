@@ -1,6 +1,7 @@
 .grid {
     display: grid;
     height: 100%;
+    width: 100%;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 1fr;
     position: absolute;
@@ -56,7 +57,8 @@
 
 .gridlinks,
 .gridnav {
-    border-left: 1px solid
+    border-left: 1px solid;
+    border-right: 1px solid
 }
 
 .gridtitle,
@@ -70,7 +72,19 @@
 }
 
 .gridtitle h1 {
-    font-size: 9vh
+    font-size: 9vh;
+    margin-top: 0;
+}
+
+.gridtitle a {
+    font-weight: 800;
+}
+
+.gridtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
 }
 
 .gridimage {
@@ -81,7 +95,7 @@
 
 .projectImage {
     height: auto;
-    object-fit: cover;
+    object-fit:contain;
     transition: transform .8s ease-in-out;
 }
 
@@ -104,7 +118,7 @@
     /* Allow each flex item to shrink */
     background: none;
     border: none;
-    font-size: 8rem;
+    font-size: 5vw;
     transition: color 0.15s ease-in-out, width 0.5s ease;
 }
 
@@ -136,5 +150,27 @@
     .grid {
         width: 100%;
         flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 0.5fr;
+    }
+
+    .gridlinks {
+        overflow: scroll;
+        display: none;
+    }
+
+    .gridimage,
+    .gridtitle {
+        border: none;
+    }
+
+    .navButton {
+
+        font-size: 10vw;
+    }
+
+    .gridnav {
+        border-right: none;
+        border-left: none;
     }
 }

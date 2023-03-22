@@ -87,7 +87,9 @@ export default function Projects() {
                 </div>
                 <div className={`${styles.gridtitle} ${styles.card}`}>
                     <h1 className={utilStyles.heading2Xl}>
-                        Noisy Surfaces
+                        <a href="https://git.rwth-aachen.de/leon.mueller/noisy-surfaces" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                            Noisy Surfaces
+                        </a>
                     </h1>
                     <h2>
                         A Fusion360 Plugin
@@ -132,7 +134,9 @@ export default function Projects() {
                 </div>
                 <div className={`${styles.gridtitle} ${styles.card}`}>
                     <h1 className={utilStyles.heading2Xl}>
+                        <a href="https://git.rwth-aachen.de/i5/factdag/factfuse" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
                         factFUSE
+                        </a>
                     </h1>
                     <h2>
                         A user-space file system for Linked Data Platforms
@@ -169,7 +173,9 @@ export default function Projects() {
                 </div>
                 <div className={`${styles.gridtitle} ${styles.card}`}>
                     <h1 className={utilStyles.heading2Xl}>
+                        <a href="/" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
                         EditRecs
+                        </a>
                     </h1>
                     <h2>
                         A Visual Studio Code Extension
