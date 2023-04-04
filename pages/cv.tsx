@@ -213,6 +213,7 @@ const ProfilePic = () => {
             className={utilStyles.borderCircle}
             height={250}
             width={250}
+            priority={true}
             alt=""
         />
     )

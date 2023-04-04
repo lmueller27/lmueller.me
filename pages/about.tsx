@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css"
 import styles from "../styles/About.module.css"
@@ -27,17 +25,5 @@ export default function About() {
                 </div>
             </div>
         </Layout>
-    )
-};
-
-const ProfilePic = () => {
-    return (
-        <Image
-            src="/images/profile.jpg"
-            className={styles.borderCircle}
-            height={300}
-            width={300}
-            alt=""
-        />
     )
 };

@@ -94,7 +94,7 @@
 
 .projectImage {
     height: auto;
-    object-fit:contain;
+    object-fit:cover;
     transition: transform .8s ease-in-out;
 }
 
@@ -173,5 +173,9 @@
     .gridnav {
         border-right: none;
         border-left: none;
+    }
+
+    .projectImage {
+        object-fit: contain;
     }
 }
