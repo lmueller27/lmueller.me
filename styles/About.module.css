@@ -10,3 +10,7 @@
 .mail {
     color: var(--myBlue);
 }
+
+.git:hover{
+    color: var(--myBlue);
+}

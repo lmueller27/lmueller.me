@@ -40,19 +40,19 @@ export default function Home() {
                                 Education
                             </td>
                             <td>
-                                - Apr 2015: <br></br>Abitur at Gymnasium am Turmhof, Mechernich
+                                - Apr 2015: <br></br>Abitur at Gymnasium am Turmhof, Mechernich (1.3)
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
-                                Oct 2015 - Oct 2020: <br></br>B.Sc. Computer Science at RWTH Aachen University
+                                Oct 2015 - Oct 2020: <br></br>B.Sc. Computer Science at RWTH Aachen University (2.6)
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
-                                Apr 2021 - Apr 2023: <br></br>M.Sc. Computer Science at RWTH Aachen University
+                                Apr 2021 - May 2023: <br></br>M.Sc. Computer Science at RWTH Aachen University (1.5)
                             </td>
                         </tr>
 
@@ -70,7 +70,7 @@ export default function Home() {
                             <td>
                             </td>
                             <td>
-                                Worked on novel information systems for production 4.0 environments.
+                                Worked on novel information systems for production 4.0 environments. Developed Server Architectures for the semantic web, Linked Data backends, and helped conceptualize data protocols.
                             </td>
                         </tr>
 

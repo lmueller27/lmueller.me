@@ -69,16 +69,16 @@ export default function Projects() {
                 </div>
                 <div className={`${styles.gridlinks} ${styles.card}`}>
                     <p>
-                        Add a variety of randomly generated noise to your 3D mesh bodies.
+                        Add a variety of randomly generated noise, patterns and textures to your Fusion 360 objects.
                     </p>
                     <br></br>
                     <p>
-                        Enrich your models with anything from smooth randomized features to jagged distortion.
+                        Lets you enrich your models with anything from smooth randomized features to jagged distortion.
                     </p>
                     <br></br>
                     <br></br>
                     <p>
-                        <Link href="https://git.rwth-aachen.de/leon.mueller/noisy-surfaces" passHref legacyBehavior>
+                        <Link href="https://github.com/lmueller27/Fusion360PatternsAndTextures" passHref legacyBehavior>
                             <a target="_blank" rel="noopener noreferrer" tabIndex={-1}>
                                 Visit Repo
                             </a>
@@ -87,8 +87,8 @@ export default function Projects() {
                 </div>
                 <div className={`${styles.gridtitle} ${styles.card}`}>
                     <h1 className={utilStyles.heading2Xl}>
-                        <a href="https://git.rwth-aachen.de/leon.mueller/noisy-surfaces" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                            Noisy Surfaces
+                        <a href="https://github.com/lmueller27/Fusion360PatternsAndTextures" target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                        Fusion360 Noise, Patterns and Textures
                         </a>
                     </h1>
                     <h2>

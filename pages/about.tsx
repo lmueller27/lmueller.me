@@ -3,6 +3,8 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css"
 import styles from "../styles/About.module.css"
 import { setTitleString } from "../components/navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGithub, faGithubAlt} from "@fortawesome/free-brands-svg-icons"
 
 
 export default function About() {
@@ -22,6 +24,8 @@ export default function About() {
                     <br></br>
                     <br></br>
                     <p>You can contact me at <a className={styles.mail} href="mailto:leon@gansen-mueller.de">leon@gansen-mueller.de</a>.</p>
+                    <br></br>
+                    <p><a className={styles.git} href="https://github.com/lmueller27"><FontAwesomeIcon icon={faGithub} />/lmueller27</a></p>
                 </div>
             </div>
         </Layout>
