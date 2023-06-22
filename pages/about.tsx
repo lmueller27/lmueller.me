@@ -4,7 +4,8 @@ import utilStyles from "../styles/utils.module.css"
 import styles from "../styles/About.module.css"
 import { setTitleString } from "../components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub, faGithubAlt} from "@fortawesome/free-brands-svg-icons"
+import {faGithub, faGithubAlt, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import Link from "next/link";
 
 
 export default function About() {
@@ -25,7 +26,20 @@ export default function About() {
                     <br></br>
                     <p>You can contact me at <a className={styles.mail} href="mailto:leon@gansen-mueller.de">leon@gansen-mueller.de</a>.</p>
                     <br></br>
-                    <p><a className={styles.git} href="https://github.com/lmueller27"><FontAwesomeIcon icon={faGithub} />/lmueller27</a></p>
+                    <p>
+                        <Link href="https://github.com/lmueller27" passHref legacyBehavior>
+                            <a className={styles.git} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                                <FontAwesomeIcon icon={faGithub} />/lmueller27
+                            </a>
+                        </Link>
+                    </p>
+                    <p>
+                        <Link href="https://www.linkedin.com/in/leon-mueller2710/" passHref legacyBehavior>
+                            <a className={styles.git} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                            </a>
+                        </Link>
+                    </p>
                 </div>
             </div>
         </Layout>

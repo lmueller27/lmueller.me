@@ -70,7 +70,10 @@ export default function Home() {
                             <td>
                             </td>
                             <td>
-                                Worked on novel information systems for production 4.0 environments. Developed Server Architectures for the semantic web, Linked Data backends, and helped conceptualize data protocols.
+                                Worked on novel information systems for production 4.0 environments. Developed Server Architectures for the semantic web, Linked Data backends, and helped conceptualize novel data protocols.
+                                <br></br>
+                                <br></br>
+                                Wrote and published scientific papers and presented their contents at international conferences. 
                             </td>
                         </tr>
 
