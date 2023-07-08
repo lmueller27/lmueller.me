@@ -1,32 +1,33 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
-import Script from 'next/script';
-import React, { useState, useEffect, ReactNode } from 'react'
+import { ReactNode } from 'react'
 import Navbar from './navbar';
 
 const name = 'Leon Müller';
 export const siteTitle = 'lmueller';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <title>Leon Müller | lmueller.me</title>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Computer Scientist and Software Developer from Aachen, Germany."
         />
+        <meta name="keywords" content="portfolio, computer science, software developer, dev, personal website" />
+        <meta name="author" content="Leon Müller" />
+        <meta name="copyright" content="Leon Müller" />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content={`https://lmueller.me/images/heads.png`}
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
       </Head>
       <header className={styles.header}>
         <Navbar />
@@ -37,41 +38,3 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-
-
-/**
- * 
- */
-/**
- * {home ? (
-          <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt=""
-            />
-            <h1 className={utilStyles.heading2Xl}>{siteTitle+'_'}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {siteTitle+'_'}
-              </Link>
-            </h2>
-          </>
-        )}
- */

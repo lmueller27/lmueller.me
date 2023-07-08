@@ -4,11 +4,19 @@ import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { setTitleString } from '../components/navbar';
 import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Home() {
-  setTitleString("")
+  //setTitleString("")
+  const { push } = useRouter();
 
-  return (
+  useEffect(() => {
+     push('/projects');
+  }, );
+
+  return (null)
+  /*return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
@@ -19,5 +27,5 @@ export default function Home() {
         </h1>
       </article>
     </Layout>
-  );
+  );*/
 }
