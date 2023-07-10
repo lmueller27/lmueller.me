@@ -17,5 +17,14 @@ module.exports = {
   images: {
       unoptimized: true
   },
-  trailingSlash: true
+  trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/projects/',
+        permanent: true,
+      },
+    ]
+  },
 }

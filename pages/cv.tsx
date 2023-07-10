@@ -25,11 +25,11 @@ export default function Home() {
                             <td>
                                 Leon Müller
                                 <div className={styles.cvcontact}>
-                                    <FontAwesomeIcon icon={faPhone} height="1rem" />
+                                    <FontAwesomeIcon icon={faPhone} />
                                     &nbsp; <a className={styles.mail} href="tel:+49 15735227109">+49 15735227109</a>
                                 </div>
                                 <div className={styles.cvcontact}>
-                                    <FontAwesomeIcon icon={faEnvelope} height="1rem" />
+                                    <FontAwesomeIcon icon={faEnvelope} />
                                     &nbsp; <a className={styles.mail} href="mailto:leon@gansen-mueller.de">leon@gansen-mueller.de</a>
                                 </div>
                             </td>
@@ -126,11 +126,11 @@ export default function Home() {
                     <br></br>
                     <p>Leon Müller</p>
                     <div className={styles.cvcontact}>
-                        <FontAwesomeIcon icon={faPhone} height="1rem" />
+                        <FontAwesomeIcon icon={faPhone} />
                         &nbsp; <a className={styles.mail} href="tel:+49 15735227109">+49 15735227109</a>
                     </div>
                     <div className={styles.cvcontact}>
-                        <FontAwesomeIcon icon={faEnvelope} height="1rem" />
+                        <FontAwesomeIcon icon={faEnvelope} />
                         &nbsp; <a className={styles.mail} href="mailto:leon@gansen-mueller.de">leon@gansen-mueller.de</a>
                     </div>
                     <br></br>

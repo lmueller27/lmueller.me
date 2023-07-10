@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <title>Leon Müller | lmueller.me</title>
         <meta
           name="description"
-          content="Computer Scientist and Software Developer from Aachen, Germany."
+          content="Leon Müller | Computer Scientist and Software Developer from Aachen, Germany."
         />
         <meta name="keywords" content="portfolio, computer science, software developer, dev, personal website" />
         <meta name="author" content="Leon Müller" />
