@@ -16,7 +16,7 @@ export default function Navbar() {
         <>
             <nav className={styles.nav}>
                 <div id="nav-home-section" className={styles.navHomeSection}>
-                    <Link className={utilStyles.heading2Xl} href="/projects">{siteTitle}</Link>
+                    <Link className={utilStyles.heading2Xl} href="/">{siteTitle}</Link>
                     <h1 id='path' className={`${utilStyles.heading2Xl} ${styles.navPath}`}>{titleString}</h1>
                     <h1 className={utilStyles.heading2Xl}>
                         <p className={styles.blinkingChar}>_</p>
@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
                     <div id="nav-projects-section">
                         <h1 className={utilStyles.heading2Xl}>
-                            <Link href="/projects">projects</Link>
+                            <Link href="/">projects</Link>
                         </h1>
                     </div>
                 </div>
