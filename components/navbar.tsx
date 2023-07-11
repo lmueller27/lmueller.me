@@ -60,7 +60,7 @@ export default function Navbar() {
                     </div>
                     <div id="nav-projects-section">
                         <h1 className={utilStyles.heading2Xl}>
-                            <Link href="/projects">projects</Link>
+                            <Link href="/">projects</Link>
                         </h1>
                     </div>
                 </div>

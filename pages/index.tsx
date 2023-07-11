@@ -86,7 +86,7 @@ export default function Projects() {
                     description: ["Visualize and compare weather trends for any geolocation.",
                         "Is today / this week / this month hotter than usual?"],
                     repoUrl: "https://github.com/lmueller27/daily-weather-history",
-                    subtitle: 'A weather trend web app',
+                    subtitle: 'A climate trend web app',
                     showLinkToRepo: true,
                 }}
                 next={nextSlide}

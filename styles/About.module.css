@@ -7,6 +7,11 @@
     overflow: scroll;
 }
 
+.aboutBox {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
 .mail {
     color: var(--myBlue);
 }

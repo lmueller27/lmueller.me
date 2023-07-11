@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css"
 import styles from "../styles/About.module.css"
 import { setTitleString } from "../components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGithub, faGithubAlt, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import Link from "next/link";
 
 
@@ -16,12 +16,12 @@ export default function About() {
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutBox}>
                     <p>Hey there! I&apos;m Leon and I&apos;m a Computer Science masters graduate.</p>
-                    <p>I am interested in information systems, system engineering, </p>
-                    <p>data science and human-computer-interaction.</p>
+                    <p>I am interested in information systems, system engineering, web development,
+                        data science and human-computer-interaction.</p>
                     <br></br>
                     <p>On this site you can see some of things that I like working on.</p>
-                    <p>These include software/coding projects, research papers and the</p>
-                    <p>occasional design experiments.</p>
+                    <p>These include software/coding projects, research papers and the
+                        occasional design experiments.</p>
                     <br></br>
                     <br></br>
                     <p>You can contact me at <a className={styles.mail} href="mailto:leon@gansen-mueller.de">leon@gansen-mueller.de</a>.</p>
@@ -40,6 +40,7 @@ export default function About() {
                             </a>
                         </Link>
                     </p>
+                    <br></br>
                 </div>
             </div>
         </Layout>
