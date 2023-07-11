@@ -26,17 +26,17 @@ export default function Navbar() {
                 <div id="nav-rest" className={styles.navSection}>
 
                     <div id="nav-about-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/about">about</Link>
                         </h1>
                     </div>
                     <div id="nav-cv-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/cv">cv</Link>
                         </h1>
                     </div>
                     <div id="nav-projects-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/">projects</Link>
                         </h1>
                     </div>
@@ -49,17 +49,17 @@ export default function Navbar() {
                 <div id="nav-menu" className={styles.navMenuSection}>
 
                     <div id="nav-about-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/about">about</Link>
                         </h1>
                     </div>
                     <div id="nav-cv-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/cv">cv</Link>
                         </h1>
                     </div>
                     <div id="nav-projects-section">
-                        <h1 className={utilStyles.heading2Xl}>
+                        <h1 className={utilStyles.heading2XlLight}>
                             <Link href="/">projects</Link>
                         </h1>
                     </div>

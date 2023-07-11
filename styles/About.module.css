@@ -8,8 +8,8 @@
 }
 
 .aboutBox {
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 2vw;
+    padding-right: 25vw;
 }
 
 .mail {
@@ -18,4 +18,11 @@
 
 .git:hover{
     color: var(--myBlue);
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutBox {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
 }

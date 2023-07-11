@@ -1,38 +1,38 @@
 .cvcontainer {
     height: 100%;
-    display: flex;
-    overflow: scroll;
-    padding: 2rem 1vw
-}
-
-.cvtable {
-    border-spacing: 75px 50px;
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: auto;
+    gap: 4rem; 
 }
 
 .descriptorcell {
-    font-size: 2rem;
-    text-align:left;
-    vertical-align: top;
+    text-align: left;
 }
 
-.cvlistimage {
-    display:flex;
+.centeredcell {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.cvlist {
-    height: 100%;
-    display:none;
+.centeredcellList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
     .cvcontainer {
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
     }
-    .cvtable {
-        display: none;
-    }
-    .cvlist {
-        display: block;
+
+    .imagecell {
+        text-align: center;
     }
 }

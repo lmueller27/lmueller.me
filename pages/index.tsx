@@ -3,6 +3,8 @@ import Layout, { siteTitle } from '../components/layout';
 import { setTitleString } from '../components/navbar';
 import React from 'react';
 import ProjectSlide from '@/components/projectSlides/projectSlide';
+import NavButtons from '@/components/projectSlides/navButtons';
+import styles from '../styles/Overlay.module.css'
 
 export default function Projects() {
     setTitleString("/projects")
@@ -17,6 +19,9 @@ export default function Projects() {
             <Head>
                 <title>{siteTitle + ' | projects'}</title>
             </Head>
+            <div className={styles.overlay}>
+                <NavButtons next={nextSlide} previous={prevSlide}></NavButtons>
+            </div>
             <NoisyProject customRef={refs[0]} index={1} datastatus={"active"} />
             <EditrecsProject customRef={refs[1]} index={1} datastatus={"before"}></EditrecsProject>
             <ServerProject customRef={refs[2]} index={2} datastatus={"before"}></ServerProject>

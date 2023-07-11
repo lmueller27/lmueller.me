@@ -5,8 +5,16 @@ import Image from 'next/image';
 import { projectContent } from '@/types/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import NavButtons from './navButtons';
 
-export default function ProjectSlide({ customRef, index, datastatus, projectContent, next, previous }: { customRef: React.RefObject<HTMLElement>, index: number, datastatus: string, projectContent: projectContent, next: () => void, previous: () => void }) {
+export default function ProjectSlide({ customRef, index, datastatus, projectContent, next, previous }:
+    {
+        customRef: React.RefObject<HTMLElement>,
+        index: number, datastatus: string,
+        projectContent: projectContent,
+        next: () => void,
+        previous: () => void
+    }) {
 
     return (
         <article ref={customRef} className={styles.grid} data-index={index} data-status={datastatus}>
@@ -21,7 +29,7 @@ export default function ProjectSlide({ customRef, index, datastatus, projectCont
                 />
             </div>
             <div className={`${styles.gridlinks} ${styles.card}`}>
-                {projectContent.description.map((paragraph,i) => (<div key={i}><p>{paragraph}</p><br></br></div>))}
+                {projectContent.description.map((paragraph, i) => (<div key={i}><p>{paragraph}</p><br></br></div>))}
                 <br></br>
                 <br></br>
                 {projectContent.showLinkToRepo ?
@@ -39,13 +47,12 @@ export default function ProjectSlide({ customRef, index, datastatus, projectCont
                         {projectContent.title}
                     </a>
                 </h1>
-                <h2>
+                <p>
                     {projectContent.subtitle}
-                </h2>
+                </p>
             </div>
-            <div className={`${styles.gridnav} ${styles.card}`}>
-                <button className={`${styles.navButton} ${styles.navButtonLeft}`} type='button' onClick={next} tabIndex={-1}>{'<'}</button>
-                <button className={`${styles.navButton} ${styles.navButtonRight}`} type='button' onClick={previous} tabIndex={-1}>{'>'}</button>
+            <div className={styles.slideNav}>
+                <NavButtons next={next} previous={previous} ></NavButtons>
             </div>
         </article>
     );

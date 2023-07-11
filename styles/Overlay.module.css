@@ -1,0 +1,15 @@
+.overlay {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    left: 0px;
+    top: 85%;
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .overlay {
+        display: grid;
+    }
+}
