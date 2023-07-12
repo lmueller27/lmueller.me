@@ -128,7 +128,8 @@ export default function Projects() {
                 projectContent={{
                     title: 'EditRecs',
                     imgPath: "/images/editrecs.png",
-                    description: ["This is a research project I developed for my masters thesis. An extension framework for Visual Studio Code that enables proactive point of interest recommendations for the developers current work context.",
+                    description: ["This is a research project I developed for my masters thesis. It is an extension framework for VS Code that generates smart point-of-interest recommendations learned from program structure and developer interaction.",
+                    "Features a client-server architecture to leverage interaction insights from entire teams.",
                     "Work in Progress. More to come soon."],
                     repoUrl: "",
                     subtitle: 'A Visual Studio Code Extension',
