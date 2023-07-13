@@ -24,6 +24,19 @@
     gap: 3rem;
 }
 
+.downloadButton {
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--myWhite);
+    background-color: var(--myDarkgreen);
+    border: 1px solid var(--myWhite);
+    border-radius: 5px;
+    font-size:xx-large
+}
+
 @media only screen and (max-width: 768px) {
     .cvcontainer {
         padding: 2rem;

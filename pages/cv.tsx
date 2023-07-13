@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import styles from "../styles/CV.module.css"
 import { setTitleString } from "../components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import ProfilePicture from "@/components/profilePicture";
 
 export default function CV() {
@@ -14,6 +14,7 @@ export default function CV() {
             <Head>
                 <title>{siteTitle + ' | cv'}</title>
             </Head>
+            <a href="/docs/cv_mueller.pdf" target="_blank" rel="noopener noreferrer" ><button className={styles.downloadButton}><FontAwesomeIcon icon={faFile}/></button></a>
             <div className={styles.cvcontainer}>
                 <div className={styles.imagecell}>
                     <ProfilePicture />
