@@ -14,7 +14,7 @@ export default function About() {
             <Head><title>{siteTitle + ' | about'}</title></Head>
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutBox}>
-                    <p>Hey there! I&apos;m Leon and I&apos;m a Computer Science masters graduate.</p>
+                    <p>Hey there! I&apos;m Leon and I&apos;m a Full Stack Developer and Computer Science masters graduate.</p>
                     <p>I am interested in web development, information systems,
                         data science and human-computer-interaction.</p>
                     <br></br>

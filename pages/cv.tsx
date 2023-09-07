@@ -14,7 +14,8 @@ export default function CV() {
             <Head>
                 <title>{siteTitle + ' | cv'}</title>
             </Head>
-            <a href="/docs/cv_mueller.pdf" target="_blank" rel="noopener noreferrer" ><button className={styles.downloadButton}><FontAwesomeIcon icon={faFile}/></button></a>
+            {/** Uncomment the line below to include a download link to a cv pdf */}
+            {/*<a href="/docs/cv_mueller.pdf" target="_blank" rel="noopener noreferrer" ><button className={styles.downloadButton}><FontAwesomeIcon icon={faFile}/></button></a>*/}
             <div className={styles.cvcontainer}>
                 <div className={styles.imagecell}>
                     <ProfilePicture />
@@ -31,6 +32,22 @@ export default function CV() {
                     </div>
                 </div>
 
+                <div className={styles.descriptorcell}>
+                    <h1>Experience</h1>
+                </div>
+                <div className={styles.centeredcellList}>
+                    <p>
+                    Sep 2023 - present: <br></br> Junior Full Stack Developer  <br></br> at mgm technology partners.
+                    </p>
+
+                    <p>
+                    Jan 2021 - Feb 2022: <br></br> Student Research Assistant  <br></br> at the Cluster of Excellence &quot;Internet of Production&quot;, RWTH Aachen University.
+                    <br></br><br></br>
+                    Worked on novel information systems for production 4.0 environments. Developed Server Architectures for the semantic web, Linked Data backends, and helped conceptualize novel data protocols.
+                    <br></br>
+                    Wrote and published scientific papers and presented their contents at international conferences.
+                    </p>
+                </div>
 
                 <div className={styles.descriptorcell}>
                     <h1>
@@ -49,19 +66,6 @@ export default function CV() {
                     </p>
                 </div>
 
-                <div className={styles.descriptorcell}>
-                    <h1>Experience</h1>
-                </div>
-                <div className={styles.centeredcellList}>
-                    <p>
-                    Jan 2021 - Feb 2022: <br></br> Student Research Assistant  <br></br> at the Cluster of Excellence &quot;Internet of Production&quot;, RWTH Aachen University.
-                    </p>
-                    <p>
-                    Worked on novel information systems for production 4.0 environments. Developed Server Architectures for the semantic web, Linked Data backends, and helped conceptualize novel data protocols.
-                    <br></br>
-                    Wrote and published scientific papers and presented their contents at international conferences.
-                    </p>
-                </div>
 
                 <div className={styles.descriptorcell}>
                     <h1>Publications</h1>
